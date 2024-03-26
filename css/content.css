@@ -49,8 +49,12 @@ button {
 
 /*================Collection==============*/
 
+.containerr {
+  row-gap: 2.5rem;
+  
+}
 .collection-card {
-
+  position: relative;
   height: 350px;
   width: 300px;
   display: flex;

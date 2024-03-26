@@ -13,28 +13,27 @@ body
     top: 10px;
     right:158px;
 }
-#container
-{
+
+#container {
     background-color: #0096C7;
     margin: auto;
     text-align: center;
     width: 100%;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1.5fr 1.5fr 5fr 1fr;
+    display: flex;
     font-family: 'Lato', sans-serif;
-    z-index: 1;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     box-sizing: border-box;
-    position: fixed;
-    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149); 
+    /* position: fixed; */
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
 }
 #shopName 
 {
     font-size: 40px; 
     font-family: 'Lato', sans-serif;
+    margin-right: -30px;
+    margin-top: 5px;
 }
 #shopName a
 {
@@ -51,9 +50,25 @@ body
 {
     font-weight: bold;
     font-size: 20px;
-    display: inline-flex;
-    /* margin-left: 10px; */
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+}
+#collection div {
+    margin: 0 20px; /* Adjust margin as needed */
+}
+#collection div {
+    transition: transform 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+#collection div:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    color: #555; /* Darken text color on hover */
+}
+
+
+#collection a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
 }
 #clothing
 {
@@ -88,17 +103,30 @@ body
     font-size: 1.5em;
     margin-right: 25px;
 }
+
 #user
 {
     display: flex;
     /* float: right; */
     align-items: center;
 }
-
-.userIcon
-{
-    font-size: 45px;
+.addedToCart,
+.userIcon {
+    font-size: 30px; /* Set the same font size for both icons */
 }
+
+#badge {
+    position: absolute;
+    background-color: #fff;
+    color: #0096C7;
+    border-radius: 50%;
+    padding: 3px 6px; /* Adjust padding for smaller size */
+    font-size: 15px; /* Adjust font size for smaller size */
+    top: 12px; /* Adjust top position to align with the shopping cart icon */
+    margin-right: -13px; /* Adjust right position to align with the shopping cart icon */
+}
+
+
 #input 
 {
     width: 18em;
