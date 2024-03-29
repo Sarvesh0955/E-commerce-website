@@ -32,10 +32,6 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -73,6 +69,10 @@ button {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+}
+
+.collection-card h2 {
+  color: white;
 }
 
 .containerr_card {
