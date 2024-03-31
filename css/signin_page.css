@@ -1,9 +1,18 @@
-.signin
-{
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+.signin {
     font-family: 'Lato', sans-serif;
     width: 80%;
     padding-top: 60px;
     padding-bottom: 70px;
-    margin: auto;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ecf5f7;
 }
+

@@ -91,7 +91,9 @@ button {
   flex-basis: calc(25% - 10px); 
 }
 
-
+.section__title{
+  margin-left: 20px;
+}
 
 
 /*=============== FEATURED ===============*/
@@ -108,6 +110,8 @@ button {
   border: 1px solid hsl(0, 0%, 94%);
   overflow-y: hidden;
   transition: .3s;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .featured__tag {
@@ -189,6 +193,8 @@ button {
   border: 1px solid hsl(0, 0%, 94%);
   text-align: center;
   transition: .3s;
+  border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .products__img {
