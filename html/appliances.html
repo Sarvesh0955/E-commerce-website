@@ -16,22 +16,35 @@
     <script src="../js/jQuery3.4.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-    <link rel="stylesheet" href="/css/category.css">
+    <link rel="stylesheet" href="../css/category.css">
 </head>
 
 <body>
     <!-- HEADER -->
-    <div id="1"></div>
-    <script>
-        load("header.html");
-        function load(url)
-        {
-            req = new XMLHttpRequest();
-            req.open("GET", url, false);
-            req.send(null);
-            document.getElementById(1).innerHTML = req.responseText;
-        }
-    </script>
+    <header>
+        <section>
+            <div id="container">
+                <div id="shopName"><a href="index.html"><img src="../img/image.png" alt="logo" width="160px"></div>
+                    <div id="collection">
+                        <div id="clothing"><a href="clothing.html"> CLOTHING </a></div>
+                        <div id="stationary"><a href="stationary.html"> STATIONARY </a></div>
+                        <div id="groceries"><a href="groceries.html"> GROCERIES </a></div>
+                        <div id="appliances"><a href="appliances.html"> APPLIANCES </a></div>
+                    </div>
+                    <!-- SEARCH SECTION -->
+                    <div id="search">
+                        <i class="fas fa-search search"></i>
+                        <input type="text" id="input" name="searchBox" placeholder="Search for Clothing and Accessories">
+                    </div>
+                    <!-- USER SECTION (CART AND USER ICON) -->
+                    <div id="user">
+                        <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
+                        <a href="login_page.html"> <i class="fa fa-user userIcon"></i> </a>
+                    </div>
+            </div>
+
+        </section>
+    </header>
 
 <div class="heading">
     <h2><b>Appliances</b></h2>
@@ -299,38 +312,51 @@
 <br>
 <br>
     <!-- FOOTER -->
-    <div id="4"></div>
-    <script>
-        load("footer.html");
-        function load(url)
-        {
-            req = new XMLHttpRequest();
-            req.open("GET", url, false);
-            req.send(null);
-            document.getElementById(4).innerHTML = req.responseText;
-        }
-    </script>
+    <footer>
+        <section>    
+            <div id="containerFooter">
+
+                <div id="webFooter">
+                    <h1> Contact us </h1>
+                    <br>
+                    <p> IIIT Allahabad </p>
+                    <p> CC3 </p>
+                    <p> 1234567890 </p>
+                    <p> unimart@gmail.com </p>
+                </div>
+                
+                <div id="webFooter">
+                    <h1> helpful link </h1>
+                    <br>
+                    <p><a href="./login_page.html"> Login </a></p>
+                    <p><a href="./signin_page.html"> Sign IN </a></p>
+                    <p><a href="./profile.html"> My Account </a></p>
+                    <p><a href="./cart.html"> Shopping Cart </a></p>
+                </div>
+
+                <div id="webFooter">
+                    <h1> online store </h1>
+                    <br>
+                    <p><a href="clothing.html"> CLOTHING </a></p>
+                    <p><a href="accessories.html"> STATIONARY </a></p>
+                    <p><a href="groceries.html"> GROCERIES </a></p>
+                    <p><a href="appliances.html"> APPLIANCES </a></p>
+                </div>
+                
+                <div id="webFooter">
+                    <h1>Company</h1>
+                    <br>
+                    <p>About</p>
+                    <p>Blog</p>
+                    <p>Affiliate</p>
+                    <p> contact </p>
+                </div>
+                <br>
+            </div>
+        </section>
+
+    </footer>
 
 </body>
-
-<!-- slider JS START -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<script>
-    $(document).ready(function()
-    {
-    $('#containerSlider').slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        });
-    });
-</script>
-<!-- slider JS ENDS -->
-
-<!-- content JS -->
-<script src="../js/content.js"></script>
 
 </html>
